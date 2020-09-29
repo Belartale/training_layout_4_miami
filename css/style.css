@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.none--list {
+  list-style: none; }
+
+.none--text_decoration {
+  text-decoration: none; }
+
+.box--margin_top_15, .row--img_margin_top_except_first_two img:nth-child(n + 3) {
+  margin-top: 15px; }
+
+.box--margin_right_20 {
+  margin-right: 20px; }
+
+.box--margin_right_100 {
+  margin-right: 100px; }
+
+.box--margin_bottom_10 {
+  margin-bottom: 10px; }
+
+.box--margin_bottom_15 {
+  margin-bottom: 15px; }
+
+.box--margin_bottom_35 {
+  margin-bottom: 30px; }
+
+.box--margin_bottom_35 {
+  margin-bottom: 35px; }
+
+.box--margin_bottom_40 {
+  margin-bottom: 40px; }
+
+.box--margin_bottom_50 {
+  margin-bottom: 50px; }
+
+.box--margin_bottom_560 {
+  margin-bottom: 560px; }
+
+.row--display_flex {
+  display: flex; }
+
+.row--justify_between {
+  display: flex;
+  justify-content: space-between; }
+
+.row--justify_center {
+  display: flex;
+  justify-content: center; }
+
+.row--align_center {
+  display: flex;
+  align-items: center; }
+
+.row--flex-wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+.row--img_null_margin_left_odd img:nth-child(odd) {
+  margin-left: 0px; }
+
+.row--img_null_margin_right_even img:nth-child(even) {
+  margin-right: 0px; }
+
+.img--adaptive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img_header--bg {
+  background-image: url(../img/img_bg_sae_and_city.png);
+  background-size: cover;
+  background-position: center; }
+
+.img_footer--bg {
+  background-image: url(../img/img-bg-sea.png);
+  background-size: cover;
+  background-position: center; }
+
+.img--increase:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: img_increase;
+  cursor: pointer; }
+
+@keyframes img_increase {
+  100% {
+    transform: scale(1.05); } }
+
+.box--display_block, .control__input, .control_submit {
+  display: block; }
+
+.box_first {
+  padding: 55px 0px 65px; }
+
+.box_second {
+  padding: 110px 0px 130px; }
+
+.box {
+  padding-bottom: 130px; }
+
+.box_last {
+  padding: 230px 0px 230px; }
+
+.wrapper {
+  position: relative;
+  max-width: 940px;
+  margin: 0px auto; }
+
+.box--center {
+  display: block;
+  margin: 0 auto; }
+
+.box--center_absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.text--center {
+  text-align: center; }
+
+.call--max_width_530 {
+  max-width: 530px; }
+
+.call--width_33 {
+  width: calc(33.33% - 70px);
+  margin: 0px 35px; }
+
+.call--width_40 {
+  width: calc(40% - 20px);
+  margin: 0px 10px; }
+
+.call--width_50 {
+  width: calc(50% - 20px);
+  margin: 0px 10px; }
+
+.call--width_60 {
+  width: calc(60% - 20px);
+  margin: 0px 10px; }
+
+.font--family_first_light {
+  font-family: ubuntu_light; }
+
+.font--family_first_regular {
+  font-family: ubuntu_regular; }
+
+.font--family_first_bold {
+  font-family: ubuntu_bold; }
+
+.font--family_first_medium, .control__input, .control_submit {
+  font-family: ubuntu_medium; }
+
+.font--size_1 {
+  font-size: 48px; }
+
+.font--size_2 {
+  font-size: 32px; }
+
+.font--size_3 {
+  font-size: 24px; }
+
+.font--size_4 {
+  font-size: 24px; }
+
+.font--size_5 {
+  font-size: 15px; }
+
+.font--size_6, .control__input, .control_submit {
+  font-size: 14px; }
+
+.font--line_heigh_60 {
+  line-height: 60px; }
+
+.font--line_heigh_24 {
+  line-height: 24px; }
+
+.font--line_heigh_22 {
+  line-height: 22px; }
+
+.font--uppercase, .control__input, .control_submit, .box_head__title {
+  text-transform: uppercase; }
+
+.font--word_break {
+  word-wrap: break-word; }
+
+.font--bottom_line {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5); }
+
+.color--text_primary {
+  color: #00aaef; }
+
+.color--text_secondary {
+  color: #eeeeee; }
+
+.color--text_white {
+  color: white; }
+
+.color--text_white_transparency {
+  color: rgba(255, 255, 255, 0.5); }
+
+.color--bg_primary {
+  background-color: #00aaef; }
+
+.color--bg_secondary, .control__input, .control_submit {
+  background-color: #eeeeee; }
+
+.color--bg_white {
+  background-color: white; }
+
+.control__form {
+  width: 380px; }
+
+.control__input, .control_submit {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  border: none; }
+
+.control__input:hover, .control_submit:hover {
+  background-color: #fafafa; }
+
+.control__input:focus, .control_submit:focus {
+  background-color: #dbdbdb; }
+
+.control__input:not(:last-child), .control_submit:not(:last-child) {
+  margin-bottom: 10px; }
+
+.control__input--position_text {
+  height: 170px; }
+
+.control_submit {
+  background-color: #00aaef;
+  color: white;
+  cursor: pointer; }
+
+.control_submit:hover {
+  background-color: #00b7ff; }
+
+.control_submit:focus {
+  background-color: #009ad6; }
+
+.control_submit--width_height {
+  height: 50px;
+  max-width: 190px; }
+
+.box_first__nav {
+  position: sticky;
+  top: 20px; }
+
+.box_first__list {
+  min-width: 1px; }
+
+.box_first__item {
+  min-width: 1px; }
+
+.box_first__item--link:hover {
+  color: #00b7ff; }
+
+.box_first__item--link:focus {
+  color: #009ad6; }
+
+.box__left_side {
+  min-width: 1px; }
+
+.box__right_side {
+  min-width: 380px; }
+
+.box__list li:not(:last-child) {
+  margin-bottom: 10px; }
+
+.box__last_text {
+  min-width: 1px; }
+
+.box_head {
+  min-width: 1px;
+  position: relative;
+  top: -30px;
+  margin-bottom: 80px; }
+
+.box_body {
+  min-width: 1px; }
+
+.dox_head__under {
+  min-width: 1px; }
+
+.box_head__svg {
+  position: relative; }
+
+.svg--color {
+  fill: #00aaef; }
+
+.svg__img_crown {
+  fill-rule: evenodd; }
+
+.card_row {
+  min-width: 1px; }
+
+.card_row__img {
+  min-width: 1px; }
+
+.card {
+  min-width: 1px; }
+
+.card__photo {
+  position: relative;
+  min-width: 1px; }
+
+.card__photo::before {
+  z-index: 100;
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  content: "“";
+  font-size: 93.31px; }
+
+.card__text_fatty {
+  min-width: 1px; }
+
+.card__text_italics {
+  min-width: 1px; }
+
+.card__text_main {
+  min-width: 1px; }
+
+.box_last__text_under--position_bottom {
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  transform: translate(-50%, -50%); }

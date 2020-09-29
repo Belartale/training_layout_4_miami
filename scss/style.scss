@@ -1,0 +1,414 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+//! null style
+.none--list {
+  list-style: none;
+}
+.none--text_decoration {
+  text-decoration: none;
+}
+
+//! indents
+
+.box--margin_top_15 {
+  margin-top: 15px;
+}
+.box--margin_right_20 {
+  margin-right: 20px;
+}
+.box--margin_right_100 {
+  margin-right: 100px;
+}
+.box--margin_bottom_10 {
+  margin-bottom: 10px;
+}
+.box--margin_bottom_15 {
+  margin-bottom: 15px;
+}
+.box--margin_bottom_35 {
+  margin-bottom: 30px;
+}
+.box--margin_bottom_35 {
+  margin-bottom: 35px;
+}
+.box--margin_bottom_40 {
+  margin-bottom: 40px;
+}
+.box--margin_bottom_50 {
+  margin-bottom: 50px;
+}
+.box--margin_bottom_560 {
+  margin-bottom: 560px;
+}
+
+//! color var
+$color_primary: #00aaef;
+$color_primary_hover: #00b7ff;
+$color_primary_focus: #009ad6;
+
+$color_secondary: #eeeeee;
+$color_secondary_hover: #fafafa;
+$color_secondary_focus: #dbdbdb;
+
+$color_white: white;
+$color_white_transparency: rgba(255, 255, 255, 0.5);
+
+//! font family var
+$font_first_light: ubuntu_light;
+$font_first_regular: ubuntu_regular;
+$font_first_bold: ubuntu_bold;
+$font_first_medium: ubuntu_medium;
+
+//! position with flex
+.row--display_flex {
+  display: flex;
+}
+.row--justify_between {
+  display: flex;
+  justify-content: space-between;
+}
+.row--justify_center {
+  display: flex;
+  justify-content: center;
+}
+.row--align_center {
+  display: flex;
+  align-items: center;
+}
+.row--flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row--img_null_margin_left_odd img:nth-child(odd) {
+  margin-left: 0px;
+}
+.row--img_null_margin_right_even img:nth-child(even) {
+  margin-right: 0px;
+}
+.row--img_margin_top_except_first_two img:nth-child(n + 3) {
+  @extend .box--margin_top_15;
+}
+
+//! img
+.img--adaptive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img_header--bg {
+  background-image: url(../img/img_bg_sae_and_city.png);
+  background-size: cover;
+  background-position: center;
+}
+.img_footer--bg {
+  background-image: url(../img/img-bg-sea.png);
+  background-size: cover;
+  background-position: center;
+}
+.img--increase:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: img_increase;
+  cursor: pointer;
+  @keyframes img_increase {
+    100% {
+      transform: scale(1.05);
+    }
+  }
+}
+
+//! block
+.box--display_block {
+  display: block;
+}
+.box_first {
+  padding: 55px 0px 65px;
+}
+.box_second {
+  padding: 110px 0px 130px;
+}
+.box {
+  padding-bottom: 130px;
+}
+.box_last {
+  padding: 230px 0px 230px;
+}
+.wrapper {
+  position: relative;
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+//! center
+.box--center {
+  display: block;
+  margin: 0 auto;
+}
+.box--center_absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text--center {
+  text-align: center;
+}
+
+//! width of cell
+.call--max_width_530 {
+  max-width: 530px;
+}
+
+.call--width_33 {
+  width: calc(33.33% - 70px);
+  margin: 0px 35px;
+}
+.call--width_40 {
+  width: calc(40% - 20px);
+  margin: 0px 10px;
+}
+.call--width_50 {
+  width: calc(50% - 20px);
+  margin: 0px 10px;
+}
+.call--width_60 {
+  width: calc(60% - 20px);
+  margin: 0px 10px;
+}
+
+//! font family
+.font--family_first_light {
+  font-family: $font_first_light;
+}
+.font--family_first_regular {
+  font-family: $font_first_regular;
+}
+.font--family_first_bold {
+  font-family: $font_first_bold;
+}
+.font--family_first_medium {
+  font-family: $font_first_medium;
+}
+
+//! font size
+.font--size_1 {
+  font-size: 48px;
+}
+.font--size_2 {
+  font-size: 32px;
+}
+.font--size_3 {
+  font-size: 24px;
+}
+.font--size_4 {
+  font-size: 24px;
+}
+.font--size_5 {
+  font-size: 15px;
+}
+.font--size_6 {
+  font-size: 14px;
+}
+
+//! font line-heigh
+.font--line_heigh_60 {
+  line-height: 60px;
+}
+.font--line_heigh_24 {
+  line-height: 24px;
+}
+.font--line_heigh_22 {
+  line-height: 22px;
+}
+
+//! font other
+.font--uppercase {
+  text-transform: uppercase;
+}
+.font--word_break {
+  word-wrap: break-word;
+}
+.font--bottom_line {
+  border-bottom: 1px dashed $color_white_transparency;
+}
+
+//! for text color
+.color--text_primary {
+  color: $color_primary;
+}
+.color--text_secondary {
+  color: $color_secondary;
+}
+.color--text_white {
+  color: $color_white;
+}
+.color--text_white_transparency {
+  color: $color_white_transparency;
+}
+
+//! for background
+.color--bg_primary {
+  background-color: $color_primary;
+}
+.color--bg_secondary {
+  background-color: $color_secondary;
+}
+.color--bg_white {
+  background-color: $color_white;
+}
+
+//! control
+.control__form {
+  width: 380px;
+}
+.control__input {
+  @extend .box--display_block;
+  @extend .color--bg_secondary;
+  @extend .font--size_6;
+  @extend .font--family_first_medium;
+  @extend .font--uppercase;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.control__input:hover {
+  background-color: $color_secondary_hover;
+}
+.control__input:focus {
+  background-color: $color_secondary_focus;
+}
+.control__input:not(:last-child) {
+  margin-bottom: 10px;
+}
+.control__input--position_text {
+  height: 170px;
+}
+
+.control_submit {
+  @extend .control__input;
+  background-color: $color_primary;
+  color: $color_white;
+  cursor: pointer;
+}
+.control_submit:hover {
+  background-color: $color_primary_hover;
+}
+.control_submit:focus {
+  background-color: $color_primary_focus;
+}
+.control_submit--width_height {
+  height: 50px;
+  max-width: 190px;
+}
+
+//! begin first box
+.box_first__nav {
+  position: sticky;
+  top: 20px;
+  // не знаю почему не работает sticky
+}
+.box_first__list {
+  min-width: 1px;
+}
+.box_first__item {
+  min-width: 1px;
+}
+.box_first__item--link:hover {
+  color: $color_primary_hover;
+}
+
+.box_first__item--link:focus {
+  color: $color_primary_focus;
+}
+
+//! begin second box
+.box__left_side {
+  min-width: 1px;
+}
+.box__right_side {
+  min-width: 380px;
+}
+
+.box__list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.box__last_text {
+  min-width: 1px;
+}
+
+//! title (<h1>)
+.box_head {
+  min-width: 1px;
+  position: relative;
+  top: -30px;
+  margin-bottom: 80px;
+}
+.box_head__title {
+  @extend .font--uppercase;
+}
+
+//! main text (box body)
+.box_body {
+  min-width: 1px;
+}
+
+//! svg under title
+.dox_head__under {
+  min-width: 1px;
+}
+.box_head__svg {
+  position: relative;
+}
+.svg--color {
+  fill: $color_primary;
+}
+.svg__img_crown {
+  fill-rule: evenodd;
+}
+
+//! card row
+.card_row {
+  min-width: 1px;
+}
+.card_row__img {
+  min-width: 1px;
+}
+//! card
+.card {
+  min-width: 1px;
+}
+.card__photo {
+  position: relative;
+  min-width: 1px;
+}
+.card__photo::before {
+  z-index: 100;
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  content: "“";
+  font-size: 93.31px;
+}
+.card__text_fatty {
+  min-width: 1px;
+}
+.card__text_italics {
+  min-width: 1px;
+}
+.card__text_main {
+  min-width: 1px;
+}
+
+//! footer
+.box_last__text_under--position_bottom {
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
